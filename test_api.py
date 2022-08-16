@@ -20,8 +20,7 @@ def predict():
     return jsonify({'prediction': list(prediction)})
 
 
-if __name__ == '__main__':
-    port = 12121 # If you don't provide any port then the port will be set to 12345
+if __name__ == '__main__': # If you don't provide any port then the port will be set to 12345
     ml_algorithm = joblib.load("model2.pkl") # Load "model.pkl"
     print ('Model loaded')
-    app.run(port=port, debug=True)
+    app.run(debug=True)
