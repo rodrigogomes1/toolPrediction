@@ -4,7 +4,7 @@ import joblib
 app = Flask(__name__)
 
 
-@app.route("/", methods=['GET'])
+@app.route("/")
 def hello():
     return "Welcome to machine learning mo2222del2 APIs-Waitress!"
 
