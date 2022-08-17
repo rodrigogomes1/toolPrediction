@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "<h1>Welcome to our medium-greeting-api!</h1>"
+    return "<h1>Welcome to our Tool Recognition Machine Learning-API!</h1>"
 
 @app.route('/predict', methods=['POST'])
 def predict():
