@@ -19,7 +19,9 @@ def predict():
     print(inputEntry)
     prediction = ml_algorithm.predict(inputEntry)
     #jsonify({'prediction': list(prediction)})
-    return "<h1>Prediction"+str(prediction)+"!</h1>"
+    #"<h1>Prediction"+str(prediction)+"!</h1>",jsonify({'prediction': list(prediction)})
+    return str(prediction[0])
+
 
 if __name__ == '__main__': # If you don't provide any port then the port will be set to 12345
     ml_algorithm = joblib.load("model2.pkl") # Load "model.pkl"
