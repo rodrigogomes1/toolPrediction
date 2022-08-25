@@ -10,7 +10,7 @@ def hello():
 
 @app.route('/predict/tool', methods=['POST'])
 def predictTool():
-    ml_algorithm = joblib.load("modeltrainedHome2.pkl")
+    ml_algorithm = joblib.load("modelTrainedHome2.pkl")
     json_ = request.json
     input=[]
     for key, value in json_[0].items():
